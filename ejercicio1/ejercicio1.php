@@ -20,16 +20,16 @@ function semaforo_a($color){
         switch($color){
 
             case "rojo":
-                echo 'Frene';
-                break;
+                return 'Frene';
+
 
                 case "amarillo":
-                    echo 'Precaucion';
-                    break;
+                    return 'Precaucion';
+
 
                     case "verde":
-                        echo 'Avance';
-                        break;
+                        return 'Avance';
+
 
             default:
                 echo 'Estado desconocido';
@@ -37,8 +37,3 @@ function semaforo_a($color){
     }
 
 
-    echo semaforo_a('rojo') . ' - SOY LA FUNCION SEMAFORO A';
-    echo '</br>';
-    echo semaforo_b('rojo') . '- SOY LA FUNCION SEMAFORO B' ;
-    echo '</br>';
-    echo semaforo_c('rojo') . ' - SOY LA FUNCION SEMAFORO C';
