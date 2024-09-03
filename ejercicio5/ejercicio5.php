@@ -24,8 +24,3 @@ function sumatoria_c($arrayDeNumeros){
     echo $resultado;
 }
 
-echo sumatoria_a([1,2,3,4]);
-echo '</br>';
-echo sumatoria_b([1,2,3,4]);
-echo '</br>';
-echo sumatoria_c([1,2,3,4]);

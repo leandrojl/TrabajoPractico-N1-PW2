@@ -37,7 +37,4 @@ class Saludar{
 
 }
 
-$objetoSaludador = new Saludar ("Martin", "Gomez");
-$objetoSaludador->saludoFormal("15hs");
-echo '</br>';
-$objetoSaludador->saludoInformal("15hs");
+

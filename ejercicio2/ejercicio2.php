@@ -17,6 +17,3 @@ function binomioCuadradoPerfecto_b($a,$b){
     return $primerNumeroAlCuadrado + $segundoNumeroAlCuadrado + $DosPorElPrimerParametroPorSegundoElParametro;
 }
 
-echo 'El Resultado del binomio cuadrado perfecto tipo A es:'.binomioCuadradoPerfecto_a(2,2);
-echo '</br>';
-echo 'El Resultado del binomio cuadrado perfecto tipo B es:'.binomioCuadradoPerfecto_b(2,2);
