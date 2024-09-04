@@ -53,26 +53,11 @@ include "../ejercicio8/header.php";
         $image_name = basename($image,".jpg");
         //var_dump('soy la variable image= '.$image_name);
         echo '<div class="w3-third">
-                    <img src="'.$image.'" alt="Imagen" class="w3-image w3-border">
-                    <p>'.$image_name.'</p>
-              </div>
-                  
-              
-              ';
+              <img src="'.$image.'" alt="Imagen" class="w3-image w3-border" style="width: 100%; height: 300px; object-fit: contain; background-color: #f0f0f0;">
+              <p>'.$image_name.'</p>
+                </div>';
     }
     ?>
-    <!--
-     <div class="w3-third">
-        <img src="./imagenes/meme1.jpg" alt="Imagen 1" class="w3-image w3-border">
-    </div>
-    <div class="w3-third">
-        <img src="./imagenes/meme2.jpg" alt="Imagen 2" class="w3-image w3-border">
-    </div>
-    <div class="w3-third">
-        <img src="./imagenes/meme3.jpg" alt="Imagen 3" class="w3-image w3-border">
-    </div>
-
-     -->
 
 </div>
 
@@ -87,7 +72,7 @@ include "../ejercicio8/header.php";
 
         <div class="w3-col s12 m12 l12"">
             <label class="w3-text-blue"><b>Seleccionar Imagen</b></label>
-            <input class="w3-input w3-border" type="file" name="imagen" accept="image/*" required>
+            <input class="w3-input w3-border" type="file" name="imagen" accept="image/*">
         </div>
         <div class="w3-col s12 m12 l12">
             <label for="name">Nombre del archivo:</label>
@@ -97,7 +82,7 @@ include "../ejercicio8/header.php";
         <div class="w3-col s12 m12 l12"">
         <button class="w3-button w3-blue w3-margin-top w3-margin-bottom" type="submit">Subir</button>
         </div>
-        </form>
+    </form>
     <div class="w3-section w3-third">
 
     </div>
