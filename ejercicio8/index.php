@@ -18,6 +18,7 @@ include '../ejercicio8/getRutaYDireccionamiento.php'
         .iframe-container {
             display: flex;
             justify-content: center;
+
             align-items: center;
             width: 80%; /* Ajusta este valor para cambiar los márgenes */
             max-width: 1200px; /* Puedes establecer un máximo de ancho si lo deseas */
