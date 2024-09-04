@@ -46,11 +46,23 @@ include "../ejercicio8/header.php";
 
 <div class="w3-row-padding w3-margin-top">
     <?php
-
-    include './procesarImagen.php'
-
+    $dir_name = "./imagenes/";
+    $images = glob($dir_name."*.jpg");
+    foreach($images as $image) {
+        //var_dump('soy la variable image= '.$image);
+        $image_name = basename($image,".jpg");
+        //var_dump('soy la variable image= '.$image_name);
+        echo '<div class="w3-third">
+                    <img src="'.$image.'" alt="Imagen" class="w3-image w3-border">
+                    <p>'.$image_name.'</p>
+              </div>
+                  
+              
+              ';
+    }
     ?>
-    <div class="w3-third">
+    <!--
+     <div class="w3-third">
         <img src="./imagenes/meme1.jpg" alt="Imagen 1" class="w3-image w3-border">
     </div>
     <div class="w3-third">
@@ -59,6 +71,9 @@ include "../ejercicio8/header.php";
     <div class="w3-third">
         <img src="./imagenes/meme3.jpg" alt="Imagen 3" class="w3-image w3-border">
     </div>
+
+     -->
+
 </div>
 
 <div class="w3-container w3-padding-32">
@@ -70,13 +85,19 @@ include "../ejercicio8/header.php";
           method="post"
           enctype="multipart/form-data" class="w3-container w3-card-4  w3-text-blue w3-margin w3-third">
 
-        <div class="w3-section ">
+        <div class="w3-col s12 m12 l12"">
             <label class="w3-text-blue"><b>Seleccionar Imagen</b></label>
             <input class="w3-input w3-border" type="file" name="imagen" accept="image/*" required>
         </div>
-
+        <div class="w3-col s12 m12 l12">
+            <label for="name">Nombre del archivo:</label>
+            <input class="w3-input w3-border"
+                   type="text" id="name" name="name" required>
+        </div>
+        <div class="w3-col s12 m12 l12"">
         <button class="w3-button w3-blue w3-margin-top w3-margin-bottom" type="submit">Subir</button>
-    </form>
+        </div>
+        </form>
     <div class="w3-section w3-third">
 
     </div>
