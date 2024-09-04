@@ -1,11 +1,7 @@
 <?php
-
-function concatenar($texto1, $texto2){
-    return $texto1." ".$texto2;
-}
-
-
+include '../ejercicio8/getRutaYDireccionamiento.php'
 ?>
+
 
 <!DOCTYPE html>
 <html lang="es">
@@ -40,21 +36,9 @@ function concatenar($texto1, $texto2){
     </style>
 </head>
 <body>
-<div class="w3-container w3-teal w3-padding-16">
-    <h1 class="w3-center w3-xxlarge">Leandro Javier Loureiro</h1>
-</div>
-
-<div class="w3-bar w3-light-grey">
-    <a href="index.php?" class="w3-bar-item w3-button w3-mobile">Home</a>
-    <a href="index.php?page=ejercicio1" class="w3-bar-item w3-button w3-mobile">Ejercicio 1</a>
-    <a href="index.php?page=ejercicio2" class="w3-bar-item w3-button w3-mobile">Ejercicio 2</a>
-    <a href="index.php?page=ejercicio3" class="w3-bar-item w3-button w3-mobile">Ejercicio 3</a>
-    <a href="index.php?page=ejercicio4" class="w3-bar-item w3-button w3-mobile">Ejercicio 4</a>
-    <a href="index.php?page=ejercicio5" class="w3-bar-item w3-button w3-mobile">Ejercicio 5</a>
-    <a href="index.php?page=ejercicio6" class="w3-bar-item w3-button w3-mobile">Ejercicio 6</a>
-    <a href="index.php?page=ejercicio7" class="w3-bar-item w3-button w3-mobile">Ejercicio 7</a>
-
-</div>
+<?php
+include "../ejercicio8/header.php";
+?>
 
 
 <div class="iframe-container">
@@ -62,78 +46,14 @@ function concatenar($texto1, $texto2){
         Tu navegador no soporta iframes.
     </iframe>
 </div>
-
-<div class="w3-container w3-padding-32 w3-round-large">
-
-    <div class="w3-card-4 w3-margin-bottom w3-padding">
-        <header class="w3-container w3-teal">
-            <h2>Ejercicio 3: Concatenar textos</h2>
-        </header>
-        <div class="w3-container w3-padding">
-            <p>
-
-                Cree una función concatenar($texto1, $texto2) que reciba dos textos como parámetro y devuelva
-                ambos textos concatenados como uno solo.
-
-            </p>
-        </div>
-        <header class="w3-container w3-light-green">
-            <h2>Resultado ejercicio 3:</h2>
-        </header>
-        <div class="w3-container w3-padding">
-            <p>
-            </p>
-            <p>
-                En la funcion concatenar($texto1, $texto2) paso dos textos por parametro los cuales van a ser concatenados.
-                <br>
-                <!-- Resultado por pantalla -->
-                <?php
-                echo concatenar("Alejandro", "es amigo de Popeye");
-                ?>
-            </p>
-        </div>
-    </div>
-</div>
-
-<div>
-    <?php
-    // Verifica si hay un parámetro 'page' en la URL
-    if (isset($_GET['page'])) {
-        $page = $_GET['page'];
-
-        // Determina qué archivo incluir basado en el valor del parámetro
-        switch ($page) {
-            case 'ejercicio1':
-                include '../ejercicio1/index.php';
-                break;
-            case 'ejercicio2':
-                include '../ejercicio2/index.php';
-                break;
-            case 'ejercicio3':
-                include '../ejercicio3/index.php';
-                break;
-            case 'ejercicio4':
-                include '../ejercicio4/index.php';
-                break;
-            case 'ejercicio5':
-                include '../ejercicio5/index.php';
-                break;
-            case 'ejercicio6':
-                include '../ejercicio6/index.php';
-                break;
-            case 'ejercicio7':
-                include '../ejercicio7/index.php';
-                break;
-            default:
-                echo "<h2>Página no encontrada</h2>";
-                break;
-        }
-    }
-    ?>
-</div>
+<?php
+include './resolucionEjercicio3.php';
+?>
 
 
-
+<?php
+include "../ejercicio8/footer.php";
+?>
 </body>
 </html>
 

@@ -1,67 +1,61 @@
 <?php
-function sumatoria_a($array){
-    $resultado=0;
-    for($i=0;$i<count($array);$i++){
-        $resultado = $resultado + $array[$i];
-    }
-    echo $resultado;
-}
-
-function sumatoria_b($arrayDeNumeros){
-    $resultado=0;
-    foreach($arrayDeNumeros as $numero){
-        $resultado= $resultado + $numero;
-    }
-    echo $resultado;
-}
-function sumatoria_c($arrayDeNumeros){
-    $resultado=0;
-    $i=0;
-    while($i<count($arrayDeNumeros)){
-        $resultado = $resultado + $arrayDeNumeros[$i];
-        $i++; //condicion de salida
-    }
-    echo $resultado;
-}
-
+include '../ejercicio8/getRutaYDireccionamiento.php'
 ?>
 
-<div class="w3-container w3-padding-32 w3-round-large">
 
-    <div class="w3-card-4 w3-margin-bottom w3-padding">
-        <header class="w3-container w3-teal">
-            <h2>Ejercicio 5: Sumatoria</h2>
-        </header>
-        <div class="w3-container w3-padding">
-            <p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio con Resolución</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .w3-bar {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto; /* Centra el menú horizontalmente */
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%; /* Ajusta este valor para cambiar los márgenes */
+            max-width: 1200px; /* Puedes establecer un máximo de ancho si lo deseas */
+            margin: 0 auto; /* Centra el contenedor horizontalmente */
+            height: 70vh; /* Ocupa toda la altura de la ventana */
+            padding: 0;
+        }
 
-                Cree una función sumatoria que reciba un vector cómo parámetro, y devuelva la suma de todos sus
-                valores.
-                a) función sumatoria_a( $array ): Resuelva la solución utilizando la estructura de control for
-                b) función sumatoria_b( $array ): Resuelva la solución utilizando la estructura for each
-                c) función sumatoria_c( $array ): Resuelva la solución utilizando la estructura de control while
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
 
-            </p>
-        </div>
-        <header class="w3-container w3-light-green">
-            <h2>Resultado ejercicio 5:</h2>
-        </header>
-        <div class="w3-container w3-padding">
-            <p>
-            </p>
-            <p>
-                En los tres casos de la funcion sumatoria_a($arrayDeNumeros),sumatoria_b($arrayDeNumeros),sumatoria_c($arrayDeNumeros) se le pasa un array de numeros por parametro y esta devolvera la suma de los numeros dentro del array.
-                <!-- Resultado por pantalla -->
-                <br>
-                <?php
-                echo sumatoria_a([1,2,3,4]);
-                echo '</br>';
-                echo sumatoria_b([1,2,3,4]);
-                echo '</br>';
-                echo sumatoria_c([1,2,3,4]);
-                ?>
-            </p>
-        </div>
-    </div>
+    </style>
+</head>
+<body>
+<?php
+include "../ejercicio8/header.php";
+?>
 
+<div class="iframe-container">
+    <iframe src="../ejercicio8/assets/trabajoPracticoN1_pw2.pdf">
+        Tu navegador no soporta iframes.
+    </iframe>
 </div>
+
+
+
+<?php
+include './resolucionEjercicio5.php';
+?>
+
+
+<?php
+include "../ejercicio8/footer.php";
+?>
+</body>
+</html>
+

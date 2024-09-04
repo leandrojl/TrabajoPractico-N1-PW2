@@ -1,88 +1,64 @@
+
 <?php
-
-class Saludar{
-
-    private $nombre;
-    private $apellido;
-
-    function __construct($nombre, $apellido){
-        $this->nombre = $nombre;
-        $this->apellido = $apellido;
-    }
-
-    function saludoFormal($horario){
-       $horario= intval($horario);
-        if ($horario >= 5 && $horario <= 13) {
-            echo "Buenos dias {$this->nombre} {$this->apellido}";
-        } elseif($horario >= 13 && $horario <= 21){
-            echo "Buenos tardes {$this->nombre} {$this->apellido}";
-        }elseif ($horario > 21 && $horario < 5){
-            echo "Buenos noches {$this->nombre} {$this->apellido}";
-        }else{
-            echo "Ese no es un horario valido!";
-        }
-    }
-    function saludoInformal($horario){
-        $horario= intval($horario);
-        if ($horario >= 5 && $horario <= 13) {
-            echo "Hola {$this->nombre}, que tengas un buen dia!";
-        } elseif($horario >= 13 && $horario <= 21){
-            echo "Hola {$this->nombre}, que tengas una buena tarde!";
-        }elseif ($horario > 21 && $horario < 5){
-            echo "Hola {$this->nombre}, que tengas una buena noche!";
-        }else{
-            echo "Ese no es un horario valido!";
-        }
-    }
-
-}
-
+include '../ejercicio8/getRutaYDireccionamiento.php'
 ?>
 
-<div class="w3-container w3-padding-32 w3-round-large">
 
-    <div class="w3-card-4 w3-margin-bottom w3-padding">
-        <header class="w3-container w3-teal">
-            <h2>Ejercicio 6: Nombre completo</h2>
-        </header>
-        <div class="w3-container w3-padding">
-            <p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio con Resolución</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .w3-bar {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto; /* Centra el menú horizontalmente */
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%; /* Ajusta este valor para cambiar los márgenes */
+            max-width: 1200px; /* Puedes establecer un máximo de ancho si lo deseas */
+            margin: 0 auto; /* Centra el contenedor horizontalmente */
+            height: 70vh; /* Ocupa toda la altura de la ventana */
+            padding: 0;
+        }
 
-                Cree una clase llamada Saludar, la misma tendrá un constructor que reciba nombre, apellido de una
-                persona.
-                Dicha clase debe implementar el método saludoFormal( $horario ) el cual debe responder
-                concatenado al nombre un prefijo dependiendo del horario:
-                05hs a 13hs “Buenos días”
-                13hs a 21hs “Buenas tardes”
-                21hs a 05hs “Buenas noches”
-                Ej. para clase instanciada para Ezequiel Perez, y parámetro 9hs: “Buenos días Ezequiel Perez”
-                Dicha clase debe implementar también el método saludoInformal( $horario ) el cual debe responder
-                sin el apellido, iniciando con un “hola” por delante y al finalizar concatenar “que tengas un ...” saludo
-                perteneciente al horario .
-                Ej. para clase instanciada para Ezequiel Perez, y parámetro 9hs:
-                “¡Hola Ezequiel! Que tengas un buen día”
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+<?php
+include "../ejercicio8/header.php";
+?>
 
 
-            </p>
-        </div>
-        <header class="w3-container w3-light-green">
-            <h2>Resultado ejercicio 6:</h2>
-        </header>
-        <div class="w3-container w3-padding">
-            <p>
-            </p>
-            <p>
-                Tendremos una clase Saludar($nombre,$apellido) la cual el pasaremos el nombre y apellido para construir el objeto. Mediante el metodo saludoFormal($horario) devolvera un saludo cordial y
-                con el metodo saludoInformal($horario) devolvera un saludo no formal:
-                <!-- Resultado por pantalla -->
-                <br>
-                <?php
-                $objetoSaludador = new Saludar ("Martin", "Gomez");
-                $objetoSaludador->saludoFormal("15hs");
-                echo '</br>';
-                $objetoSaludador->saludoInformal("15hs");
-                ?>
-            </p>
-        </div>
-    </div>
+<div class="iframe-container">
+    <iframe src="../ejercicio8/assets/trabajoPracticoN1_pw2.pdf">
+        Tu navegador no soporta iframes.
+    </iframe>
 </div>
+
+
+
+<?php
+include './resolucionEjercicio6.php'
+?>
+
+
+<?php
+include "../ejercicio8/footer.php";
+?>
+</body>
+</html>
+
+
