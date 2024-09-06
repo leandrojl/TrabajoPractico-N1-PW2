@@ -63,10 +63,10 @@ include "../ejercicio8/header.php";
 </div>
 
 <div class="w3-container w3-padding-32">
-    <h2 class="w3-center">Subir Imagen</h2>
-    <div class="w3-section w3-third">
+            <h2 class="w3-center">Subir Imagen</h2>
+            <div class="w3-section w3-third">
 
-    </div>
+            </div>
     <form action="procesarImagenEj10.php"
           method="post"
           enctype="multipart/form-data" class="w3-container w3-card-4  w3-text-blue w3-margin w3-third">
@@ -74,24 +74,32 @@ include "../ejercicio8/header.php";
         <div class="w3-col s12 m12 l12"">
         <label class="w3-text-blue"><b>Seleccionar Imagen</b></label>
         <input class="w3-input w3-border" type="file" name="imagen" accept="image/*">
-</div>
-<div class="w3-col s12 m12 l12">
-    <label for="name">Nombre del archivo:</label>
-    <input class="w3-input w3-border"
-           type="text" id="name" name="name" required>
-</div>
-<div class="w3-col s12 m12 l12"">
-<button class="w3-button w3-blue w3-margin-top w3-margin-bottom" type="submit">Subir</button>
-</div>
-</form>
-<div class="w3-section w3-third">
+
+                <div class="w3-col s12 m12 l12">
+                        <label for="name">Nombre del archivo:</label>
+                        <input class="w3-input w3-border"
+                       type="text" id="name" name="name" required>
+                </div>
+                <div class="w3-col s12 m12 l12">
+                    <button class="w3-button w3-blue w3-margin-top w3-margin-bottom" type="submit">Subir</button>
+                </div>
+        </form>
+
+    <div class="w3-section w3-third">
+
+    </div>
 
 </div>
-</div>
 
-<?php
-include "../ejercicio8/footer.php";
-?>
+
+
+
+    <?php
+    include "../ejercicio8/footer.php";
+    ?>
+
+
+
 
 
 
