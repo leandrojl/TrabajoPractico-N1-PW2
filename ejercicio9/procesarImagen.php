@@ -4,9 +4,7 @@ echo json_encode($_FILES);
 echo '</br>';
 echo json_encode($_POST);
 
-//$_FILES["imagen"]["type"] == "image\/png" -> es una validacion para la imagen
-//$_FILES["imagen"]["error"] != 0 &&
-//$_FILES["imagen"]["size"] > 0
+
 if(isset($_FILES["imagen"])&& isset($_POST["name"])){
     $nombreDeArchivo = $_POST["name"].'.jpg';
 
@@ -24,7 +22,7 @@ if(isset($_FILES["imagen"])&& isset($_POST["name"])){
     var_dump($checkSiSeMovioElArchivo);
     if($checkSiSeMovioElArchivo){
         header("Location: index.php");
-        exit(); // Detiene la ejecución del script después de redirigir
+        exit();
     }else{
         echo "No se subio correctamente";
     }

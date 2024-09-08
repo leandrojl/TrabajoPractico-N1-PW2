@@ -42,6 +42,12 @@ if (isset($_GET['page'])) {
         case 'ejercicio12':
             header('Location: ../ejercicio12/index.php');
             exit();
+        case 'ejercicio13':
+            header('Location: ../ejercicio13/index.php');
+            exit();
+        case 'ejercicio14':
+            header('Location: ../ejercicio14/index.php');
+            exit();
         default:
             echo "<h2>Página no encontrada</h2>";
             break;

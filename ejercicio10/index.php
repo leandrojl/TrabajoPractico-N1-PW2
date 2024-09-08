@@ -13,17 +13,17 @@ include '../ejercicio8/getRutaYDireccionamiento.php'
         .w3-bar {
             display: flex;
             justify-content: space-between;
-            margin: 0 auto; /* Centra el menú horizontalmente */
+            margin: 0 auto;
         }
         .iframe-container {
             display: flex;
             justify-content: center;
 
             align-items: center;
-            width: 80%; /* Ajusta este valor para cambiar los márgenes */
-            max-width: 1200px; /* Puedes establecer un máximo de ancho si lo deseas */
-            margin: 0 auto; /* Centra el contenedor horizontalmente */
-            height: 70vh; /* Ocupa toda la altura de la ventana */
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 70vh;
             padding: 0;
         }
 

@@ -18,6 +18,7 @@ include '../ejercicio8/getRutaYDireccionamiento.php'
         .iframe-container {
             display: flex;
             justify-content: center;
+
             align-items: center;
             width: 80%;
             max-width: 1200px;
@@ -35,29 +36,37 @@ include '../ejercicio8/getRutaYDireccionamiento.php'
     </style>
 </head>
 <body>
-
 <?php
 include "../ejercicio8/header.php";
 ?>
 
-<div class="iframe-container">
-    <iframe src="../ejercicio8/assets/trabajoPracticoN1_pw2.pdf">
-        Tu navegador no soporta iframes.
-    </iframe>
+<div class="w3-container w3-padding-32">
+    <h2 class="w3-center">La Matrix… digo, Matriz</h2>
+    <div class="w3-section w3-third">
+
+    </div>
+    <div class="w3-section w3-third">
+        <div class="w3-container w3-padding-16">
+            <h2>Ingrese la dimensión de la matriz NxN</h2>
+            <form action="procesarMatriz.php" method="POST" class="w3-container w3-card-4 w3-light-grey w3-padding-16">
+                <label for="dimension"><b>Dimensión (N)</b></label>
+                <input class="w3-input w3-border" type="number" name="dimension" id="dimension" required>
+                <button type="submit" class="w3-button w3-blue w3-margin-top">Generar Matriz</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <div class="w3-section w3-third">
+
+    </div>
+
 </div>
 
 <?php
-include "./resolucionEjercicio1.php";
+include "../ejercicio8/footer.php";
 ?>
-
-
-    <?php
-    include "../ejercicio8/footer.php";
-    ?>
 
 </body>
 </html>
-
-
-
-

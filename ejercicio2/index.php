@@ -14,16 +14,16 @@ include '../ejercicio8/getRutaYDireccionamiento.php'
         .w3-bar {
             display: flex;
             justify-content: space-between;
-            margin: 0 auto; /* Centra el menú horizontalmente */
+            margin: 0 auto;
         }
         .iframe-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 80%; /* Ajusta este valor para cambiar los márgenes */
-            max-width: 1200px; /* Puedes establecer un máximo de ancho si lo deseas */
-            margin: 0 auto; /* Centra el contenedor horizontalmente */
-            height: 70vh; /* Ocupa toda la altura de la ventana */
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 70vh;
             padding: 0;
         }
 
@@ -55,15 +55,15 @@ include "./resolucionEjercicio2.php";
 
 <div>
     <?php
-    // Verifica si hay un parámetro 'page' en la URL
+
     if (isset($_GET['page'])) {
         $page = $_GET['page'];
 
-        // Determina a qué página redirigir basado en el valor del parámetro
+
         switch ($page) {
             case 'ejercicio1':
                 header('Location: ../ejercicio1/index.php');
-                exit(); // Asegúrate de usar exit después de header para detener la ejecución del script
+                exit();
             case 'ejercicio2':
                 header('Location: ../ejercicio2/index.php');
                 exit();

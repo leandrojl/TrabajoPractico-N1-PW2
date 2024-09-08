@@ -1,6 +1,6 @@
 <?php
 
-//pasaje de parametros por referencia utilizando "&"
+
 function incrementar(&$valor){
     $valor++;
 }
@@ -30,7 +30,7 @@ function incrementar(&$valor){
             <p>
                 En la funcion incrementar(&$valor) pasamos un valor por referencia y este incrementara el valor del mismo en +1.
                 <br>
-                <!-- Resultado por pantalla -->
+
                 <?php
                 $valor = 10;
                 echo incrementar($valor);

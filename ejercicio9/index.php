@@ -13,17 +13,17 @@ include '../ejercicio8/getRutaYDireccionamiento.php'
         .w3-bar {
             display: flex;
             justify-content: space-between;
-            margin: 0 auto; /* Centra el menú horizontalmente */
+            margin: 0 auto;
         }
         .iframe-container {
             display: flex;
             justify-content: center;
 
             align-items: center;
-            width: 80%; /* Ajusta este valor para cambiar los márgenes */
-            max-width: 1200px; /* Puedes establecer un máximo de ancho si lo deseas */
-            margin: 0 auto; /* Centra el contenedor horizontalmente */
-            height: 70vh; /* Ocupa toda la altura de la ventana */
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 70vh;
             padding: 0;
         }
 
@@ -49,9 +49,9 @@ include "../ejercicio8/header.php";
     $dir_name = "./imagenes/";
     $images = glob($dir_name."*.jpg");
     foreach($images as $image) {
-        //var_dump('soy la variable image= '.$image);
+
         $image_name = basename($image,".jpg");
-        //var_dump('soy la variable image= '.$image_name);
+
         echo '<div class="w3-third">
               <img src="'.$image.'" alt="Imagen" class="w3-image w3-border" style="width: 100%; height: 300px; object-fit: contain; background-color: #f0f0f0;">
               <p>'.$image_name.'</p>

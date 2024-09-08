@@ -15,4 +15,6 @@
     <a href="index.php?page=ejercicio10" class="w3-bar-item w3-button w3-mobile">Ejercicio 10</a>
     <a href="index.php?page=ejercicio11" class="w3-bar-item w3-button w3-mobile">Ejercicio 11</a>
     <a href="index.php?page=ejercicio12" class="w3-bar-item w3-button w3-mobile">Ejercicio 12</a>
+    <a href="index.php?page=ejercicio13" class="w3-bar-item w3-button w3-mobile">Ejercicio 13</a>
+    <a href="index.php?page=ejercicio14" class="w3-bar-item w3-button w3-mobile">Ejercicio 14</a>
 </div>

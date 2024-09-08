@@ -44,7 +44,7 @@ function binomioCuadradoPerfecto_b($a,$b){
                 Para resolver este ejercicio se llama a la funcion binomioCuadradoPerfecto_a($valor1, $valor2) o a la funcion binomioCuadradoPerfecto_b($valor1, $valor2), se le pasan dos valores por parametro que devolveran el resultado del binomio cuadrado perfecto.
             </p>
             <p>
-                <!-- Resultado por pantalla -->
+
                 <?php
                 echo 'El Resultado del binomio cuadrado perfecto tipo A es:'.binomioCuadradoPerfecto_a(2,2);
                 echo '</br>';

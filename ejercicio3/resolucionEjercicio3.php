@@ -30,7 +30,7 @@ function concatenar($texto1, $texto2){
             <p>
                 En la funcion concatenar($texto1, $texto2) paso dos textos por parametro los cuales van a ser concatenados.
                 <br>
-                <!-- Resultado por pantalla -->
+
                 <?php
                 echo concatenar("Alejandro", "es amigo de Popeye");
                 ?>

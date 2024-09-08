@@ -74,7 +74,7 @@ class Saludar{
             <p>
                 Tendremos una clase Saludar($nombre,$apellido) la cual el pasaremos el nombre y apellido para construir el objeto. Mediante el metodo saludoFormal($horario) devolvera un saludo cordial y
                 con el metodo saludoInformal($horario) devolvera un saludo no formal:
-                <!-- Resultado por pantalla -->
+
                 <br>
                 <?php
                 $objetoSaludador = new Saludar ("Martin", "Gomez");
