@@ -41,29 +41,26 @@ include "../ejercicio8/header.php";
 ?>
 
 <div class="w3-container w3-padding-32">
-    <h2 class="w3-center">Lanzar dados</h2>
+    <h2 class="w3-center">Contador de visitas… extraterrestres</h2>
     <div class="w3-section w3-third">
 
+
     </div>
-    <form action="recibirTiradaDeDados.php"
+    <form action="procesarFormularioDeVisitas.php"
           method="get"
           enctype="application/x-www-form-urlencoded"
           class="w3-container w3-card-4  w3-text-blue w3-margin w3-third">
 
         <div class="w3-container  w3-padding-16">
             <div class="w3-col s12 m12 l12">
-                <label for="cantidad_dados_a_tirar">Seleccione cuantos dados tirar:
-                    <select name="cantidad_dados_a_tirar" id="cantidad_dados_a_tirar" class="w3-select">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
-                </label>
+                <label class="w3-text-blue"><b>Nombre</b></label>
+                <input class="w3-input w3-border" type="text" name="nombre">
+                <label class="w3-text-blue"><b>Planeta origen:</b></label>
+                <input class="w3-input w3-border" type="text" name="planeta">
             </div>
         </div>
         <div class="w3-col s12 m12 l12">
-            <button class="w3-button w3-blue w3-margin-top w3-margin-bottom" type="submit">Tirar dados</button>
+            <button class="w3-button w3-blue w3-margin-top w3-margin-bottom" type="submit">Enviar</button>
         </div>
 
     </form>
